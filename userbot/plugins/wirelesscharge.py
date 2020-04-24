@@ -27,7 +27,7 @@ import importlib.util
 
 async def timer_blankx(e):
 
- txt=e.text[7:] + '\n\n`Tesla Wireless Charging (beta) Started...\nDevice Detected: Nokia 1100\nBattery Percentage:` '
+ txt=e.text[7:] + '\n\n`Realmeme Wireless Charging (beta) Started...\nDevice Detected: Realmeme 1 (CPH1861)\nBattery Percentage:` '
 
  j=10
 
@@ -43,6 +43,6 @@ async def timer_blankx(e):
 
  if e.pattern_match.group(1) == 'f':
 
-  await e.edit("`Tesla Wireless Charging (beta) Completed...\nDevice Detected: Nokia 1100 (Space Grey Varient)\nBattery Percentage:` [100%](https://telegra.ph/file/a45aa7450c8eefed599d9.mp4) ", link_preview=True)
+  await e.edit("`Realmeme Wireless Charging (beta) Completed...\nDevice Detected: Realmeme 1(Diamond Black Varient)\nBattery Percentage:` [100%](https://telegra.ph/file/a45aa7450c8eefed599d9.mp4) ", link_preview=True)
 
 
