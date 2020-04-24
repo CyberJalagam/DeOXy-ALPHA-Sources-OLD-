@@ -22,7 +22,7 @@ async def _(event):
 
         return
 
-    animation_interval = 0.3
+    animation_interval = 2.0
 
     animation_ttl = range(0, 43)
 
@@ -64,7 +64,6 @@ async def _(event):
             "`Creating Takedown`",
             "`Dectecting User`",
             "`User Dectected Successfully`",
-            "[{}](tg://user?id={})",
             "`Sending DMCA`",
             "`Processing.`",
             "`Processing..`",
