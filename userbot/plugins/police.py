@@ -64,6 +64,7 @@ async def _(event):
             "`Creating Takedown`"
             "`Dectecting User`"
             "`User Dectected Successfully`"
+            "[{}](tg://user?id={})"
             "`Sending DMCA`"
             "`Processing.`"
             "`Processing..`"
