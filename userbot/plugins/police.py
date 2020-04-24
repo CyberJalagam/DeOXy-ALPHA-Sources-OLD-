@@ -103,7 +103,6 @@ async def _(event):
     else:
         mention = "`Warning!! User DMCAed By BOSS @CyberJalagam\nReason: Kang Without Permission. `"
         await event.reply(mention)
-    await event.delete()
          
 
         
