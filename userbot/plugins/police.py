@@ -45,37 +45,37 @@ async def _(event):
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
             "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
-            "@CyberJalagam **Police iz Here**"
-            "Who The Fuck Kanged My Stuff Without Ma Permission?"
-            "`Connecting to 698.69.96`"
-            "`syncing the server 698.69.96`"
-            "**`Connected!`**"
-            "`Connecting To DMCA`"
-            "`https://www.dmca.com/signup/createtakedown.aspx?r=mSAT`"
-            "`Loading.`"
-            "`Loading..`"
-            "`Loading...`"
-            "`Loading....`"
-            "`Loading.....`"
-            "`Loading......`"
-            "`Loading.......`"
-            "`Loading........`"
-            "`Loading.........`"
-            "`Creating Takedown`"
-            "`Dectecting User`"
-            "`User Dectected Successfully`"
-            "[{}](tg://user?id={})"
-            "`Sending DMCA`"
-            "`Processing.`"
-            "`Processing..`"
-            "`Processing...`"
-            "`Processing....`"
-            "`Processing.....`"
-            "`Processing......`"
-            "`Processing.......`"
-            "`Processing........`"
-            "`Processing.........`"
-            "`DMCA Successfully Completed`"
+            "@CyberJalagam **Police iz Here**",
+            "Who The Fuck Kanged My Stuff Without Ma Permission?",
+            "`Connecting to 698.69.96`",
+            "`syncing the server 698.69.96`",
+            "**`Connected!`**",
+            "`Connecting To DMCA`",
+            "`https://www.dmca.com/signup/createtakedown.aspx?r=mSAT`",
+            "`Loading.`",
+            "`Loading..`",
+            "`Loading...`",
+            "`Loading....`",
+            "`Loading.....`",
+            "`Loading......`",
+            "`Loading.......`",
+            "`Loading........`",
+            "`Loading.........`",
+            "`Creating Takedown`",
+            "`Dectecting User`",
+            "`User Dectected Successfully`",
+            "[{}](tg://user?id={})",
+            "`Sending DMCA`",
+            "`Processing.`",
+            "`Processing..`",
+            "`Processing...`",
+            "`Processing....`",
+            "`Processing.....`",
+            "`Processing......`",
+            "`Processing.......`",
+            "`Processing........`",
+            "`Processing.........`",
+            "`DMCA Successfully Completed`",
             "**698.69.96 Disconnected**"
        
         
