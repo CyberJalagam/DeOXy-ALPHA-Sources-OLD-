@@ -6,7 +6,7 @@
 
 Available Commands:
 
-.despvolte"""
+.desp4volte"""
 
 from telethon import events
 
@@ -30,7 +30,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "DespVolte":
+    if input_str == "Desp4Volte":
 
         await event.edit(input_str)
 
