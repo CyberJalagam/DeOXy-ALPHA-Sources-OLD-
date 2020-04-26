@@ -37,10 +37,10 @@ async def _(event):
         
             "`Connecting To DarkWeb.ONION...`",
             "`Successful!`",
-            "`Connected 69.669.699.96
+            "`Connected 69.669.699.96`",
             "`Targetting Selected Message.`",
-            "`Successfully Founded The Hash Of The Account`"
-            "`Targeting PH: HackAll.onion`"
+            "`Successfully Founded The Hash Of The Account`",
+            "`Targeting PH: HackAll.onion`",
             "`Attempting method I... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Method I FAILED!`",
             "`Attempting method II... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
