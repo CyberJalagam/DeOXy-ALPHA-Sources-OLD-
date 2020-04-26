@@ -52,7 +52,7 @@ async def _(event):
             "`▒ ▒ ▒ ▒ ▒ ▒ ▒`",
             "**VoLTE Not Detected ;_; **",
             "`Sed Loif`", 
-            "`Connecting To Cubot X20 Pro`",
+            "`Connecting Cubot X20 Pro`",
             "`Running Erfan GSI Tool`",
             "`Processing.`",
             "`Processing...........`",
