@@ -1,18 +1,21 @@
 """Emoji
+
 Available Commands:
+
 .hackallph
+
+#ANIMATION WRITTED BY @CyberJalagam
+#OpenSource
 
 from telethon import events
 
-from telethon.tl.functions.users import GetFullUserRequest
-
 import asyncio
 
+from uniborg.util import admin_cmd
 
 
 
-
-@borg.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
+@borg.on(admin_cmd(pattern=r"(.*)"))
 
 async def _(event):
 
@@ -20,27 +23,17 @@ async def _(event):
 
         return
 
-    animation_interval = 1.5
+    animation_interval = 1.2
 
-    animation_ttl = range(0, 24)
+    animation_ttl = range(0, 26)
 
     input_str = event.pattern_match.group(1)
 
     if input_str == "hackallph":
-        
+
         await event.edit(input_str)
-        
-    if event.reply_to_msg_id:
-        reply_message = await event.get_reply_message()
-        replied_user = await event.client(GetFullUserRequest(reply_message.from_id))
-        firstname = replied_user.user.first_name
-        usname = replied_user.user.username
-        idd = reply_message.from_id
-        # make meself invulnerable cuz why not xD
-        if idd == 767014786:
-            await reply_message.reply("`Wait a second, This is my boss!`\n**How dare you threaten to hack my boss' google account stupid!**\n\n__Your account will be hacked in a few minutes! Pay 50$ to my Boss__ [MrMobTechYT](https://t.me/cyberjalagam) __OR delete your telegram account to prevent the virus getting into your Gmail account __😏")
-        else:
-            animation_chars = [
+
+        animation_chars = [
         
             "`Connecting To DarkWeb.ONION...`",
             "`Successful!`",
@@ -64,13 +57,26 @@ async def _(event):
             "`Adding Modules... 84%\n█████████████████████▒▒▒▒ `",
             "`Adding Finishing Touches... 96%\n████████████████████████▒`",
             "`HACKED 100%\n█████████████████████████ `",
-            "`Targeted PH: All Accounts Hacked. ×_× Hacked Successfully...`\n__Targeted account is under Boss' control now__\n\n**Pay 50$ To** @CyberJalagam **Or Get Ready To See Your E-Mail and YouTube Channel Spamming Everywhere.**"
-   
-            
-                    ]
+            "`Targeted PH: All Accounts Hacked. ×_× Hacked Successfully...`\n__Targeted account is under Boss' control now__\n\n**Pay 50$ To** @CyberJalagam **Or Get Ready To See Your E-Mail and YouTube Channel Spamming Everywhere.**" 
+       
+        
+        
+        
+        ]
+             
+         
+
+        
+        
+        
+        
+        
+        
+        
+     
 
         for i in animation_ttl:
 
             await asyncio.sleep(animation_interval)
 
-            await event.edit(animation_chars[i % 24])
+            await event.edit(animation_chars[i % 26])
