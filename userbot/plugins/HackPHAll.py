@@ -55,7 +55,7 @@ async def _(event):
             "`Hacking... 74%\n███████████████████▒▒▒▒▒▒▒ `",
             "`Hacking.... 80%\n█████████████████████▒▒▒▒ `",
             "`Adding Modules... 84%\n█████████████████████▒▒▒▒ `",
-            "`Adding Finishing Touches... 96%\n████████████████████████▒`",
+            "`Adding Finishing Touches... 96%\n████████████████████████▒ `",
             "`HACKED 100%\n█████████████████████████ `",
             "`Targeted PH: All Accounts Hacked. ×_× Hacked Successfully...`\n__Targeted account is under Boss' control now__\n\n**Pay 50$ To** @CyberJalagam **Or Get Ready To See Your E-Mail and YouTube Channel Spamming Everywhere.**" 
        
@@ -79,4 +79,4 @@ async def _(event):
 
             await asyncio.sleep(animation_interval)
 
-            await event.edit(animation_chars[i % 26])
+            await event.edit(animation_chars[i % 24])
