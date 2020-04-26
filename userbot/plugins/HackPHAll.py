@@ -22,7 +22,7 @@ async def _(event):
 
     animation_interval = 1.5
 
-    animation_ttl = range(0, 30)
+    animation_ttl = range(0, 24)
 
     input_str = event.pattern_match.group(1)
 
@@ -67,12 +67,10 @@ async def _(event):
             "`Targeted PH: All Accounts Hacked. ×_× Hacked Successfully...`\n__Targeted account is under Boss' control now__\n\n**Pay 50$ To** @CyberJalagam **Or Get Ready To See Your E-Mail and YouTube Channel Spamming Everywhere.**"
    
             
-            
-            
-            ]
+                    ]
 
         for i in animation_ttl:
 
             await asyncio.sleep(animation_interval)
 
-            await event.edit(animation_chars[i % 30])
+            await event.edit(animation_chars[i % 24])
