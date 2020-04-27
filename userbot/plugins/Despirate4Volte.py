@@ -1,11 +1,8 @@
 #Don't Mess With The Credits
-#©RB INTERNATIONAL
-#Written By: @CyberJalagam - Mr.MobTech
+#Written By: @CyberJalagam and @TechyNewbie
 
 """Emoji
-
 Available Commands:
-
 .volte"""
 
 from telethon import events
@@ -26,11 +23,11 @@ async def _(event):
 
     animation_interval = 1
 
-    animation_ttl = range(0, 45)
+    animation_ttl = range(0, 41)
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "Volte":
+    if input_str == "volte":
 
         await event.edit(input_str)
 
@@ -44,7 +41,6 @@ async def _(event):
             "` ▒ ▒ ▒ ▒ ▒`",           
             "` ▂ ▒ ▒ ▒ ▒`",
             "` ▂ ▄ ▒ ▒ ▒`",
-            "` ▂ ▄ ▒ ▒ ▒`",
             "` ▂ ▄ ▆ ▒ ▒`",
             "` ▂ ▄ ▆ ▇ ▒`",
             "` ▂ ▄ ▆ ▇ █`",
@@ -54,7 +50,6 @@ async def _(event):
             "`Connecting To Jio Network...`",
             "` ▒ ▒ ▒ ▒ ▒`",           
             "` ▂ ▒ ▒ ▒ ▒`",
-            "` ▂ ▄ ▒ ▒ ▒`",
             "` ▂ ▄ ▒ ▒ ▒`",
             "` ▂ ▄ ▆ ▒ ▒`",
             "` ▂ ▄ ▆ ▇ ▒`",
@@ -69,7 +64,6 @@ async def _(event):
             "`Connecting To Jio Network...`",
            "` ▒ ▒ ▒ ▒ ▒`",           
             "` ▂ ▒ ▒ ▒ ▒`",
-            "` ▂ ▄ ▒ ▒ ▒`",
             "` ▂ ▄ ▒ ▒ ▒`",
             "` ▂ ▄ ▆ ▒ ▒`",
             "` ▂ ▄ ▆ ▇ ▒`",
@@ -88,4 +82,4 @@ async def _(event):
 
             await asyncio.sleep(animation_interval)
 
-            await event.edit(animation_chars[i % 45])
+            await event.edit(animation_chars[i % 41])
