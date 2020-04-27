@@ -14,9 +14,9 @@ async def amireallyalive(alive):
     await alive.edit("      👍🏻  `Currently Alive!` 🍻\n"
                      "__Telethon version: 6.9.0 // Python: 3.7.3\n\n__"
                      "**◆ --------------------- ✪ ---------------------◆**\n"
-                     "𝐵𝑜𝑡 𝑐𝑟𝑒𝑎𝑡𝑒𝑑 𝑏𝑦: [𝕄𝕣.𝕄𝕠𝕓𝕋𝕖𝕔𝕙𝕐𝕋✪](t.me/CyberJalagam)\n"
+                     "𝐵𝑜𝑡 𝓂𝑜𝒹𝒾𝒻𝒾𝑒𝒹 𝑏𝑦: [𝕄𝕣.𝕄𝕠𝕓𝕋𝕖𝕔𝕙𝕐𝕋✪](t.me/CyberJalagam)\n"
                      "Thanks to:[SnapDragon](tg://user?id=719877937), @anubisxx\n"
-                     f"𝐹𝑎𝑖𝑡𝒉𝑓𝑢𝑙𝑙𝑦 𝑤𝑜𝑟𝑘𝑖𝑛𝑔 𝑓𝑜𝑟: 🎖{DEFAULTUSER}\n"
+                     f"ℱÃ𝐈𝕥н𝒻𝕦l𝕝𝔂 𝑤𝑜𝑟𝑘𝑖𝑛𝑔 𝑓𝑜𝑟: 🎖{DEFAULTUSER}\n"
                      "**◆ --------------------- ✪ ---------------------◆**\n\n"
                      "                       ★彡 [GitHub](https://github.com/JAISHNAVPRASAD-DarklIous/X-tra-Telegram) 彡★"
                      "                                                ")
