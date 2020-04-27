@@ -77,7 +77,6 @@ async def _(event):
             "`Creating Takedown`",
             "`Dectecting User`",
             "`User Dectected Successfully`",
-            "`First Name: `" + sender,
             "`Sending DMCA`",
             "`Processing.`",
             "`Processing..`",
