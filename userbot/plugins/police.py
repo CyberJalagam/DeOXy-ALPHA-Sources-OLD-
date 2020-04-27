@@ -17,7 +17,6 @@ from uniborg.util import admin_cmd
 async def _(event):
    sender = await event.get_sender()
     if event.fwd_from:
-
         return
 
     animation_interval = 0.7
