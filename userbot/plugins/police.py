@@ -1,8 +1,10 @@
-#Emoji
+"""Emoji
 
-#Available Commands:
+Available Commands:
 
-#.police
+.police
+
+if u edit it then u r gay"""
 
 from telethon import events
 
@@ -15,8 +17,9 @@ from uniborg.util import admin_cmd
 @borg.on(admin_cmd(pattern=r"(.*)"))
 
 async def _(event):
-   sender = await event.get_sender()
+
     if event.fwd_from:
+
         return
 
     animation_interval = 0.7
@@ -74,7 +77,6 @@ async def _(event):
             "`Creating Takedown`",
             "`Dectecting User`",
             "`User Dectected Successfully`",
-            "`User: " + sender
             "`Sending DMCA`",
             "`Processing.`",
             "`Processing..`",
