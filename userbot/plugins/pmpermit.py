@@ -10,6 +10,7 @@ PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 CACHE = {}
 
+
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "**No name set yet nibba, check pinned message in** @XtraTgBot"
 USER_BOT_WARN_ZERO = "`You were spamming my peru master @CyberJalagam , henceforth your retarded lame ass has been blocked by my master's userbot.` **Ma Boss Don't Have Time To Speak To Retards Like You. So, Please Leave.** "
 USER_BOT_NO_WARN = ("[──▄█▀█▄─────────██ \n▄████████▄───▄▀█▄▄▄▄ \n██▀▼▼▼▼▼─▄▀──█▄▄ \n█████▄▲▲▲─▄▄▄▀───▀▄ \n██████▀▀▀▀─▀────────▀▀](tg://user?id=742506768)\n\n"
@@ -121,9 +122,12 @@ if Var.PRIVATE_GROUP_ID is not None:
             # userbot's should not reply to other userbot's
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
             return
-        sender = event.sender
-        sender = (await bot.get_entity(event.from_id)) if not event.from_id in CACHE else CACHE[event.from_ir]
-        
+        if event.from_id in CACHE:
+            sender = CACHE[event.from_id]
+        else:
+            sender = await bot.get_entity(event.from_id)
+            CACHE[event.from_id] = sender
+
         if chat_id == bot.uid:
 
             # don't log Saved Messages
