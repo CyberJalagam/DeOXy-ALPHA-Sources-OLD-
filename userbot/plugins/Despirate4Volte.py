@@ -6,7 +6,7 @@
 
 Available Commands:
 
-.desp4volte"""
+.volte"""
 
 from telethon import events
 
@@ -24,77 +24,62 @@ async def _(event):
 
         return
 
-    animation_interval = 0.7
+    animation_interval = 1
 
-    animation_ttl = range(0, 62)
+    animation_ttl = range(0, 45)
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "Desp4Volte":
+    if input_str == "Volte":
 
         await event.edit(input_str)
 
         animation_chars = [
         
+            "Checking Device",
+            "`Realme 1 (MTK Helio P60)` detected",
+            "Detecting System",
+            "`LOS 16` detected",
             "`Connecting To Jio Network...`",
-            "`█ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▅ ▄ ▂ ▁`",    
-            "`▒ ▒ ▒ ▒ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▒`",
-            "*Checking VoLTE*",
-            "`█ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▅ ▄ ▂ ▁`",    
-            "`▒ ▒ ▒ ▒ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▒`",
+            "` ▒ ▒ ▒ ▒ ▒`",           
+            "` ▂ ▒ ▒ ▒ ▒`",
+            "` ▂ ▄ ▒ ▒ ▒`",
+            "` ▂ ▄ ▒ ▒ ▒`",
+            "` ▂ ▄ ▆ ▒ ▒`",
+            "` ▂ ▄ ▆ ▇ ▒`",
+            "` ▂ ▄ ▆ ▇ █`",
+            "**No SIM Card detected**",
+            "**Not for Jio users**",
+            "__Flashing GSI__",
+            "`Connecting To Jio Network...`",
+            "` ▒ ▒ ▒ ▒ ▒`",           
+            "` ▂ ▒ ▒ ▒ ▒`",
+            "` ▂ ▄ ▒ ▒ ▒`",
+            "` ▂ ▄ ▒ ▒ ▒`",
+            "` ▂ ▄ ▆ ▒ ▒`",
+            "` ▂ ▄ ▆ ▇ ▒`",
+            "` ▂ ▄ ▆ ▇ █`",
+            "**Connection Successful!**",
+            "`Checking VoLTE`",
+            "`Checking VoLTE.`",
+            "`Checking VoLTE`..",
             "**VoLTE Not Detected ;_; **",
-            "`Sed Loif`", 
-            "`Connecting Cubot X20 Pro`",
-            "`Running Erfan GSI Tool`",
-            "`Processing.`",
-            "`Processing...........`",
-            "`Processing....…............`",
-            "`GSI Successfully Created.`",
-            "`Flashing`",
-           "`█ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▅ ▄ ▂ ▁`",    
-            "`▒ ▒ ▒ ▒ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▒`",
+            "**Not for Jio users**",
+            "__Flashing Stock ColorOS__",
             "`Connecting To Jio Network...`",
-            "`█ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▅ ▄ ▂ ▁`",    
-            "`▒ ▒ ▒ ▒ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▒`",
-            "*Checking VoLTE*",
-            "`█ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▅ ▄ ▂ ▁`",    
-            "`▒ ▒ ▒ ▒ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▒`",
-            "**VoLTE Dectected Successfully :P **" ,
-            "`Checking Other Features`",
-            "`Processing.`",
-            "`Processing...........`",
-            "`Processing....…............`",
-            "`Other Fukn Features Not Fukn Working Properly :-(`",
-            "`Switching To ShitOS`",
-            "*Checking VoLTE*",
-            "`█ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▇ ▆ ▅ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▅ ▄ ▂ ▁`",    
-            "`▒ ▒ ▒ ▒ ▄ ▂ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▁`",
-            "`▒ ▒ ▒ ▒ ▒ ▒ ▒`",
-            "`VoLTE Dectected Successfully...`",
-            "`#JioGeng Continue The Happy Sed ShittyOS Loif ;_; `"
+           "` ▒ ▒ ▒ ▒ ▒`",           
+            "` ▂ ▒ ▒ ▒ ▒`",
+            "` ▂ ▄ ▒ ▒ ▒`",
+            "` ▂ ▄ ▒ ▒ ▒`",
+            "` ▂ ▄ ▆ ▒ ▒`",
+            "` ▂ ▄ ▆ ▇ ▒`",
+            "` ▂ ▄ ▆ ▇ █`",
+            "**Connection Succesful!**",
+            "`Checking VoLTE`",
+            "`Checking VoLTE.`",
+            "`Checking VoLTE..`",
+            "**Stable VoLTE Dectected**",
+            "`#JioGeng Continue The Sed ShitOS Loif ;_; `"
 
 
  ]
@@ -103,4 +88,4 @@ async def _(event):
 
             await asyncio.sleep(animation_interval)
 
-            await event.edit(animation_chars[i % 62])
+            await event.edit(animation_chars[i % 45])
