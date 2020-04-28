@@ -10,7 +10,7 @@
 from telethon import events
 
 import asyncio
-
+from telethon.tl.functions.users import GetFullUserRequest
 from uniborg.util import admin_cmd
 
 
@@ -32,7 +32,13 @@ async def _(event):
     if input_str == "hackallph":
 
         await event.edit(input_str)
-
+        
+if event.reply_to_msg_id:
+        reply_message = await event.get_reply_message()
+        replied_user = await event.client(GetFullUserRequest(reply_message.from_id))
+        firstname = replied_user.user.first_name
+        usname = replied_user.user.username
+        idd = reply_message.from_id
         animation_chars = [
         
             "`Connecting To DarkWeb.ONION...`",
@@ -57,7 +63,7 @@ async def _(event):
             "`Adding Modules... 84%\n█████████████████████▒▒▒▒ `",
             "`Adding Finishing Touches... 96%\n████████████████████████▒`",
             "`HACKED 100%\n█████████████████████████ `",
-            "`Targeted PH: All Accounts Hacked. ×_× Hacked Successfully...`\n__Targeted account is under Boss' control now__\n\n**Pay 50$ To** @CyberJalagam **Or Get Ready To See Your E-Mail and YouTube Channel Spamming Everywhere.**" 
+            "`Targeted PH: All Accounts Hacked. ×_× Hacked Successfully...`\n__Targeted account: [{}](tg://user?id={})".format(firstname, idd), is under Boss' control now__\n\n**Pay 50$ To** @CyberJalagam **Or Get Ready To See Your E-Mail and YouTube Channel Spamming Everywhere.**" 
        
         
         
