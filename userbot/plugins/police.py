@@ -1,9 +1,6 @@
 """Emoji
-
 Available Commands:
-
 .police
-
 if u edit it then u r gay"""
 
 from telethon import events
@@ -40,7 +37,6 @@ async def _(event):
         usname = replied_user.user.username
         idd = reply_message.from_id
 	animation_chars = [
-        
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
             "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
@@ -63,8 +59,8 @@ async def _(event):
             "`2048.786`",
             "`2048.786.69`",
             "`2048.786.69.1`",
-            "Passing by Narrow and Conplicated Servers.",
-            "Passing by Narrow and Conplicated Servers..",
+            "Passing by Narrow and Complicated Servers.",
+            "Passing by Narrow and Complicated Servers..",
             "@CyberJalagam **Police iz Here**",
             "Who The Fuck Kanged My Stuff Without Ma Permission?",
             "`Connecting to 2048.786.69.1`",
@@ -102,18 +98,7 @@ async def _(event):
         
         
         
-        ]
-             
-         
-
-        
-        
-        
-        
-        
-        
-        
-     
+        ] 
 
         for i in animation_ttl:
 
