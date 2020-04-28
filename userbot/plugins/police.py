@@ -11,7 +11,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from uniborg.util import admin_cmd
 
 
-@borg.on(events.NewMessage(pattern=r"(
+
 
 
 @borg.on(admin_cmd(pattern=r"(.*)"))
