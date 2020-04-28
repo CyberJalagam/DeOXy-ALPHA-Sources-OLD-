@@ -32,7 +32,7 @@ async def _(event):
 
         await event.edit(input_str)
         
-  
+        animation_chars = [
         
             "`Connecting To DarkWeb.ONION...`",
             "`Successful!`",
