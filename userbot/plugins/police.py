@@ -22,7 +22,7 @@ async def _(event):
 
     animation_interval = 1
 
-    animation_ttl = range(0, 70)
+    animation_ttl = range(0, 69)
     
     input_str = event.pattern_match.group(1)
 
@@ -69,7 +69,6 @@ async def _(event):
             "`syncing the server 2048.786.69.1`",
             "**`Connected!`**",
             "`Connecting To DMCA`",
-	    "`Connecting To DMCA`",
             "`https://www.dmca.com/signup/createtakedown.aspx?r=mSAT`",
             "`Loading.`",
             "`Loading..`",
@@ -111,4 +110,4 @@ async def _(event):
 
             await asyncio.sleep(animation_interval)
 
-            await event.edit(animation_chars[i % 70])
+            await event.edit(animation_chars[i % 69])
