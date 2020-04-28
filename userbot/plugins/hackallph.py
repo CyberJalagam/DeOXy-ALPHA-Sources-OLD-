@@ -13,7 +13,6 @@ import asyncio
 from telethon.tl.functions.users import GetFullUserRequest
 from uniborg.util import admin_cmd
 
-@borg.on(events.NewMessage(pattern=r"(.hackallph)", outgoing=True))
 
 @borg.on(admin_cmd(pattern=r"(.*)"))
 
@@ -34,19 +33,12 @@ async def _(event):
         await event.edit(input_str)
         
   
-    if event.reply_to_msg_id:
-        reply_message = await event.get_reply_message()
-        replied_user = await event.client(GetFullUserRequest(reply_message.from_id))
-        firstname = replied_user.user.first_name
-        usname = replied_user.user.username
-        idd = reply_message.from_id
-        animation_chars = [
         
             "`Connecting To DarkWeb.ONION...`",
             "`Successful!`",
             "`Connected 69.669.699.96`",
             "`Targetting Selected Message.`",
-            "Targeted : [{}](tg://user?id={})".format(firstname, idd),
+            "Targeted"
             "`Successfully Founded The Hash Of The Account`"
             "`Targeting PH: HackAll.onion`"
             "`Attempting method I... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
@@ -65,9 +57,9 @@ async def _(event):
             "`Adding Modules... 84%\n█████████████████████▒▒▒▒ `",
             "`Adding Finishing Touches... 96%\n████████████████████████▒`",
             "`HACKED 100%\n█████████████████████████ `",
-            "Checking Target : [{}](tg://user?id={})\nGetting F.I.R...".format(firstname, idd),
-            "Target Correct✓ : [{}](tg://user?id={})".format(firstname, idd),
-            "`Targeted Google Account Hacked Successfully... ×_×`\n[{}](tg://user?id={})'s __account is under Boss' control now__\n\n**Pay 50$ To** @CyberJalagam **Or Get Ready To See Your E-Mail and YouTube Channel Spamming Everywhere.**".format(firstname, idd)
+            "Checking Target"
+            "Target Correct✓"
+            "`Targeted Google Account Hacked Successfully... ×_×`\n__account is under Boss' control now__\n\n**Pay 50$ To** @CyberJalagam **Or Get Ready To See Your E-Mail and YouTube Channel Spamming Everywhere.**".format(firstname, idd)
        
         
 
