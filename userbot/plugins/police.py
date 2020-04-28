@@ -1,11 +1,11 @@
 """Emoji
 Available Commands:
-.police
-if u edit it then u r gay"""
+.police"""
 
 from telethon import events
 
 import asyncio
+
 from telethon.tl.functions.users import GetFullUserRequest
 
 from uniborg.util import admin_cmd
@@ -22,21 +22,23 @@ async def _(event):
 
     animation_interval = 1
 
-    animation_ttl = range(0, 60)
-
+    animation_ttl = range(0, 70)
+    
     input_str = event.pattern_match.group(1)
 
     if input_str == "police":
 
         await event.edit(input_str)
-	
+        
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
         replied_user = await event.client(GetFullUserRequest(reply_message.from_id))
         firstname = replied_user.user.first_name
         usname = replied_user.user.username
         idd = reply_message.from_id
-	animation_chars = [
+        animation_chars = [
+        
+		
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
             "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
@@ -59,14 +61,15 @@ async def _(event):
             "`2048.786`",
             "`2048.786.69`",
             "`2048.786.69.1`",
-            "Passing by Narrow and Complicated Servers.",
-            "Passing by Narrow and Complicated Servers..",
-            "@CyberJalagam **Police iz Here**",
-            "Who The Fuck Kanged My Stuff Without Ma Permission?",
+            "Passing by Narrow and Conplicated Servers.",
+            "Passing by Narrow and Conplicated Servers..",
+            "**@CyberJalagam Police is here**",
+            "**@CyberJalagam Police is here!!**",
             "`Connecting to 2048.786.69.1`",
             "`syncing the server 2048.786.69.1`",
             "**`Connected!`**",
             "`Connecting To DMCA`",
+	    "`Connecting To DMCA`",
             "`https://www.dmca.com/signup/createtakedown.aspx?r=mSAT`",
             "`Loading.`",
             "`Loading..`",
@@ -79,8 +82,12 @@ async def _(event):
             "`Loading.........`",
             "`Creating Takedown`",
             "`Dectecting User`",
-            "`User Dectected Successfully`",
+            "Looking for Guilty.",
+            "Looking for Guilty..",
+            "Looking for Guilty...",
             "Guilty : [{}](tg://user?id={})".format(firstname, idd),
+            "Guilty : [{}](tg://user?id={})\nGetting F.I.R..".format(firstname, idd),
+            "Guilty : [{}](tg://user?id={})\nGetting F.I.R...".format(firstname, idd),
             "`Sending DMCA`",
             "`Processing.`",
             "`Processing..`",
@@ -93,15 +100,15 @@ async def _(event):
             "`Processing.........`",
             "`DMCA Successfully Completed`",
             "**2048.786.69.1 Disconnected**"
-            "***JUSTICE***\n\nDMCA Completed. [{}](tg://user?id={})".format(firstname, idd)
-       
-        
-        
-        
-        ] 
+	    "**!!Guilty Arrested!!**",
+            "**!! Guilty Arrested !!**",
+            "__user BANNED fron Telegram__",
+            "__USER banned FROM telegram__",
+            "***JUSTICE***\n\nPolice has arrested [{}](tg://user?id={})".format(firstname, idd)
+        ]
 
         for i in animation_ttl:
 
             await asyncio.sleep(animation_interval)
 
-            await event.edit(animation_chars[i % 60])
+            await event.edit(animation_chars[i % 70])
