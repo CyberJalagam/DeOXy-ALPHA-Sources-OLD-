@@ -1,15 +1,16 @@
 """Emoji
+
 Available Commands:
-.police"""
+
+.police
+
+if u edit it then u r gay"""
 
 from telethon import events
 
 import asyncio
 
-
 from uniborg.util import admin_cmd
-
-
 
 
 
@@ -21,19 +22,18 @@ async def _(event):
 
         return
 
-    animation_interval = 1
+    animation_interval = 0.7
 
-    animation_ttl = range(0, 66)
-    
+    animation_ttl = range(0, 57)
+
     input_str = event.pattern_match.group(1)
 
     if input_str == "police":
 
         await event.edit(input_str)
-        
+
         animation_chars = [
         
-		
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
             "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
             "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
@@ -56,10 +56,10 @@ async def _(event):
             "`2048.786`",
             "`2048.786.69`",
             "`2048.786.69.1`",
-            "Passing by Narrow and Complicated Servers.",
-            "Passing by Narrow and Complicated Servers..",
-            "**@CyberJalagam Police is here**",
-            "**@CyberJalagam Police is here!!**",
+            "Passing by Narrow and Conplicated Servers.",
+            "Passing by Narrow and Conplicated Servers..",
+            "@CyberJalagam **Police iz Here**",
+            "Who The Fuck Kanged My Stuff Without Ma Permission?",
             "`Connecting to 2048.786.69.1`",
             "`syncing the server 2048.786.69.1`",
             "**`Connected!`**",
@@ -76,10 +76,7 @@ async def _(event):
             "`Loading.........`",
             "`Creating Takedown`",
             "`Dectecting User`",
-            "Looking for Guilty.",
-            "Looking for Guilty..",
-            "Looking for Guilty...",
-            "Successful",
+            "`User Dectected Successfully`",
             "`Sending DMCA`",
             "`Processing.`",
             "`Processing..`",
@@ -92,16 +89,25 @@ async def _(event):
             "`Processing.........`",
             "`DMCA Successfully Completed`",
             "**2048.786.69.1 Disconnected**"
-	    "**!!Guilty Arrested!!**",
-            "**!! Guilty Arrested !!**",
-            "__user BANNED fron Telegram__",
-            "__USER banned FROM telegram__",
-            "***JUSTICE***\n\nPolice has arrested the targeted user)
-    
-	]
+       
+        
+        
+        
+        ]
+             
+         
+
+        
+        
+        
+        
+        
+        
+        
+     
 
         for i in animation_ttl:
 
             await asyncio.sleep(animation_interval)
 
-            await event.edit(animation_chars[i % 66])
+            await event.edit(animation_chars[i % 57])
