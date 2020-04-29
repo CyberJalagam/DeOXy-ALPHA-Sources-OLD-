@@ -6,7 +6,6 @@ from telethon import events
 
 import asyncio
 
-from telethon.tl.functions.users import GetFullUserRequest
 
 from uniborg.util import admin_cmd
 
@@ -24,7 +23,7 @@ async def _(event):
 
     animation_interval = 1
 
-    animation_ttl = range(0, 69)
+    animation_ttl = range(0, 66)
     
     input_str = event.pattern_match.group(1)
 
@@ -32,12 +31,6 @@ async def _(event):
 
         await event.edit(input_str)
         
-    if event.reply_to_msg_id:
-        reply_message = await event.get_reply_message()
-        replied_user = await event.client(GetFullUserRequest(reply_message.from_id))
-        firstname = replied_user.user.first_name
-        usname = replied_user.user.username
-        idd = reply_message.from_id
         animation_chars = [
         
 		
@@ -86,9 +79,7 @@ async def _(event):
             "Looking for Guilty.",
             "Looking for Guilty..",
             "Looking for Guilty...",
-            "Guilty : [{}](tg://user?id={})".format(firstname, idd),
-            "Guilty : [{}](tg://user?id={})\nGetting F.I.R..".format(firstname, idd),
-            "Guilty : [{}](tg://user?id={})\nGetting F.I.R...".format(firstname, idd),
+            "Successful",
             "`Sending DMCA`",
             "`Processing.`",
             "`Processing..`",
@@ -105,11 +96,12 @@ async def _(event):
             "**!! Guilty Arrested !!**",
             "__user BANNED fron Telegram__",
             "__USER banned FROM telegram__",
-            "***JUSTICE***\n\nPolice has arrested [{}](tg://user?id={})".format(firstname, idd)
-        ]
+            "***JUSTICE***\n\nPolice has arrested the targeted user)
+    
+	]
 
         for i in animation_ttl:
 
             await asyncio.sleep(animation_interval)
 
-            await event.edit(animation_chars[i % 69])
+            await event.edit(animation_chars[i % 66])
