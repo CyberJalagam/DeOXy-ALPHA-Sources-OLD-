@@ -2,7 +2,7 @@
 # FORK AT YOUR OWN RISK
 # Documentation/Guide, visit [How2Techy](https://how2techy.com/x-tra-userbot-plugin-guide-part1/)
 # Installing
-Join https://t.me/XtraTgBot for updates and tuts
+Join https://t.me/CyberJalagam for updates and tuts
 ### The Easy Way
 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
