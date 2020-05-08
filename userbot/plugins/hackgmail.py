@@ -45,7 +45,7 @@ async def _(event):
         else:
             animation_chars = [
         
-            "`Connecting To Dark WEB Secret Server...`",
+            "`Connecting To DarkWEB.ONION`",
             "`Connection Successful!`",
             "`Targetting` [{}](tg://user?id={})'s `Google Account.`".format(firstname, idd),
             "`Attempting method I... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
