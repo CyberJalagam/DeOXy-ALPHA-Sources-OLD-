@@ -3,6 +3,8 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#Ported To X-Tra TG MOD 2.0 By MrMobTech
+
 
 from telethon import events, errors, functions, types
 import inspect
@@ -11,10 +13,6 @@ import asyncio
 import sys
 import io
 from uniborg.util import admin_cmd
-from sql_helpers.global_variables_sql import SYNTAX, MODULE_LIST
-
-
-MODULE_LIST.append("python")
 
 
 @borg.on(admin_cmd(pattern="py"))
@@ -78,12 +76,3 @@ async def aexec(code, event):
         ''.join(f'\n {l}' for l in code.split('\n'))
     )
     return await locals()['__aexec'](event)
-
-
-SYNTAX.update({
-    "python": "\
-**Requested Module --> python**\
-\n\n**Detailed usage of fuction(s):**\
-\n\n```.python <python_code>```\
-\nUsage: Evaluate python code.\
-"
