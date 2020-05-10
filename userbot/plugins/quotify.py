@@ -10,7 +10,7 @@ from time import sleep
 from telethon.tl import functions, types
 from PIL import Image, ImageDraw, ImageFont
 
-
+sticker = f"{Config.TMP_DOWNLOAD_DIRECTORY}/quotify.webp"
 @borg.on(admin_cmd(pattern="quotify ?(.*)"))
 async def _(event):
     if event.fwd_from:
