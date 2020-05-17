@@ -3,6 +3,10 @@ import sys
 from telethon.sessions import StringSession
 from telethon import TelegramClient
 
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, scoped_session
+
 from var import Var
 
 os.system("pip install --upgrade pip")
@@ -65,7 +69,7 @@ if bool(ENV):
 
     # Userbot logging feature switch.
     BOTLOG = sb(os.environ.get("BOTLOG", "False"))
-
+    
     # Bleep Blop, this is a bot ;)
     PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
@@ -80,6 +84,22 @@ if bool(ENV):
 
     # remove.bg API key
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
+    
+    # Genius lyrics get this value from https://genius.com/developers both has same values
+    GENIUS = os.environ.get("GENIUS_API_TOKEN", None)
+    
+    # Heroku Credentials for updater.
+    HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ", "False"))
+    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
+    HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
+
+    # Custom (forked) repo URL for updater.
+    UPSTREAM_REPO_URL = os.environ.get(
+        "UPSTREAM_REPO_URL",
+        "https://github.com/JAISHNAVPRASAD-DarklIous/X-tra-Telegram.git")
+    
+     # Quotes API key
+    QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
     # Chrome Driver and Headless Google Chrome Binaries
     CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
@@ -164,3 +184,21 @@ ISAFK = False
 AFKREASON = None
 # End of PaperPlaneExtended Support Vars
 
+# Something of UniBorg
+
+ENV = bool(os.environ.get("ENV", False))
+if ENV:
+    from heroku_config import Var
+else:
+    if os.path.exists("heroku_config.py"):
+        from Var import Development as Var
+
+def start() -> scoped_session:
+    engine = create_engine(Var.DB_URI)
+    BASE.metadata.bind = engine
+    BASE.metadata.create_all(engine)
+    return scoped_session(sessionmaker(bind=engine, autoflush=False))
+
+
+BASE = declarative_base()
+SESSION = start()
