@@ -4,7 +4,7 @@
 # Based on the note module made by RaphielGang (https://da.gd/X4Mnf)
 # Syntax (.save <notename>, .get <notename>, .clear <notename>, .clearall)
 
-import userbot.plugins.sql_helper.notes_sql import get_notes, rm_note, add_note, rm_all_notes
+from userbot.notes_sql import get_notes, rm_note, add_note, rm_all_notes
 from telethon import events
 from userbot.utils import admin_cmd
 import asyncio, time
