@@ -150,7 +150,7 @@ async def upstream(ups):
             )
             repo.__del__()
             return
-        await ups.edit('`Userbot dyno build in progress, please wait 5 min only for it to complete.`'
+        await ups.edit('`Your X-tra-Telegram MOD v2.0 Is Updating. Stay Calm And Wait For 5min.`'
                        )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
