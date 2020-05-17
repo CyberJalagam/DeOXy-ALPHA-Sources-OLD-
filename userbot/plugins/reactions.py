@@ -1,4 +1,5 @@
 # By Priyam Kalra
+#Ported To Xtra MOD 2.0 By MrMobTech
 # Syntax .oof, .sed, .emoji
 from telethon import events
 from userbot.utils import admin_cmd
