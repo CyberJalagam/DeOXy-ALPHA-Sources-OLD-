@@ -24,11 +24,7 @@ async def magisk(request):
         "Stable":
         "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/stable.json",
         "Beta":
-        "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/beta.json",
-        "Canary (Release)":
-        "https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/release.json",
-        "Canary (Debug)":
-        "https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/debug.json"
+        "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/beta.json"
     }
     releases = 'Latest Magisk Releases:\n'
     for name, release_url in magisk_dict.items():
@@ -157,7 +153,7 @@ async def devices_specifications(request):
     await request.edit(reply)
 
 
-@register(outgoing=True, pattern=r"^.twrp(?: |$)(\S*)")
+@register(outgoing=True, pattern=r"^.twrp$")
 async def twrp(request):
     """ get android device twrp """
     textx = await request.get_reply_message()
