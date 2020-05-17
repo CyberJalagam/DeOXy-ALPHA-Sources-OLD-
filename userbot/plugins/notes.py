@@ -1,5 +1,6 @@
 # For UniBorg
 # By Priyam Kalra
+#Ported to Xtra Bot 2.0 By MrMobTech
 # Based on the note module made by RaphielGang (https://da.gd/X4Mnf)
 # Syntax (.save <notename>, .get <notename>, .clear <notename>, .clearall)
 
