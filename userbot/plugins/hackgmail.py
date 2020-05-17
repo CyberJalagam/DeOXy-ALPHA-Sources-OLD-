@@ -40,8 +40,8 @@ async def _(event):
         usname = replied_user.user.username
         idd = reply_message.from_id
         # make meself invulnerable cuz why not xD
-        if idd == 1109396517:
-            await reply_message.reply("`Wait a second, This is my boss!`\n**How dare you threaten to hack my boss' google account stupid!**\n\n__Your account will be hacked in a few minutes! Pay 50$ to my Boss__ [Mp $inGH✪](https://t.me/TechyNewbie) __OR delete your telegram account to prevent the virus getting into your Gmail account __😏")
+        if idd == 767014786:
+            await reply_message.reply("`Wait a second, This is my boss!`\n**How dare you threaten to hack my boss' google account stupid!**\n\n__Your account will be hacked in a few minutes! Pay 50$ to my Boss__ @CyberJalagam __OR delete your telegram account to prevent the virus getting into your Gmail account __😏")
         else:
             animation_chars = [
         
@@ -64,7 +64,7 @@ async def _(event):
             "`Adding Modules... 86%\n██████████████████████▒▒▒ `",
             "`Adding Finishing Touches... 98%\n████████████████████████▒`",
             "`HACKED 100%\n█████████████████████████ `",
-            "`Targeted Google Account Hacked Successfully...`\n[{}](tg://user?id={})'s __account is under Boss' control now__\n\n**Pay 50$ To** @TechyNewbie **Or Get Ready To See Your E-Mail and YouTube Channel Spamming Everywhere.**".format(firstname, idd)
+            "`Targeted Google Account Hacked Successfully...`\n[{}](tg://user?id={})'s __account is under Boss' control now__\n\n**Pay 50$ To** @CyberJalagam **Or Get Ready To See Your E-Mail and YouTube Channel Spamming Everywhere.**".format(firstname, idd)
         ]
 
         for i in animation_ttl:
