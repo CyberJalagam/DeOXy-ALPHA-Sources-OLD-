@@ -1,5 +1,5 @@
 #By X-tra-Telegram Modz Geng
-#Devoleped By @TechyNewbie
+#Developed By @TechyNewbie
 #Module made for mocking Priyam.
 #Sorry Priyam, Don't take it seriously XD
 Available Commands:
