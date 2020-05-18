@@ -1,6 +1,7 @@
-"""Emoji
-Module made for mocking Priyam.
-Sorry Priyam, Don't take it seriously XD
+#By X-tra-Telegram Modz Geng
+#Devoleped By @TechyNewbie
+#Module made for mocking Priyam.
+#Sorry Priyam, Don't take it seriously XD
 Available Commands:
 .gei"""
 
