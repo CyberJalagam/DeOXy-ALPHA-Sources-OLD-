@@ -10,6 +10,7 @@ import os
 import time
 import math
 import asyncio
+from global_variables_sql import SYNTAX, MODULE_LIST
 from youtube_dl import YoutubeDL
 from youtube_dl.utils import (DownloadError, ContentTooShortError,
                               ExtractorError, GeoRestrictedError,
@@ -212,3 +213,14 @@ async def download_video(v_url):
         os.remove(f"{ytdl_data['id']}.mp4")
         await v_url.delete()
         
+MODULE_LIST.append("yt_dl")
+
+SYNTAX.update({
+    "youtube_dl": "\
+**Requested Module --> YouTube Downloader**\
+\n\n`.ytv <link>`\
+\nUsage: Downloads YouTube video (with audio)\
+\n\n`.yta <link>`\
+\nUsage: Downloads audio only\
+"
+})
