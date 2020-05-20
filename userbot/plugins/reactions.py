@@ -1,23 +1,29 @@
 # By Priyam Kalra
-#Ported To Xtra MOD 2.0 By MrMobTech
-# Syntax .oof, .sed, .emoji
+#Ported To Xtra MOD 2.0 By MrMobTech & TechyNewbie
+# Use .syntax emoji/reactions/ascii to know all commands
 from telethon import events
 from userbot.utils import admin_cmd
 import asyncio
 from telethon.tl import functions, types
+from global_variables_sql import SYNTAX, MODULE_LIST
+
+
+MODULE_LIST.append("reactions")
+MODULE_LIST.append("emojis")
+MODULE_LIST.append("ascii")
 
 emojis = {
     "yee": "ツ",
     "happy": "(ʘ‿ʘ)",
     "veryhappy": "=͟͟͞͞٩(๑☉ᴗ☉)੭ु⁾⁾",
     "amazed": "ヾ(o✪‿✪o)ｼ",
-    "crying": "༎ຶ‿༎ຶ",
+    "crying": "༎ຶ︵༎ຶ",
     "dicc": "╰U╯☜(◉ɷ◉ )",
     "fek": "╰U╯\n(‿ˠ‿)",
     "ded": "✖‿✖",
     "sad": "⊙︿⊙",
     "lenny": "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)",
-    "idk": "¯\_(ツ)_/¯"
+    "idc": "¯\_(ツ)_/¯"
 }
 
 unpacked_emojis = ""
@@ -27,7 +33,11 @@ for emoji in emojis:
 
 # this dictionary is a mess but meh
 ascii = {
-    "mf": "'                            / ¯͡  ) \n                           /...../ \n                         /´¯´/ \n                       /¯..../ \n                    /....  / \n             /´¯/'...' /´¯¯·¸ \n          / '/.../..../..../.. /¨¯\ \n        ('(...´...´.... ¯~'/...')  /\n         \.................'..... /´ \n          \................ _.·´\n            \..............( \n'             \.............\\n"
+    "mf": "'                            / ¯͡  ) \n                           /...../ \n                         /´¯´/ \n                       /¯..../ \n                    /....  / \n             /´¯/'...' /´¯¯·¸ \n          / '/.../..../..../.. /¨¯\ \n        ('(...´...´.... ¯~'/...')  /\n         \.................'..... /´ \n          \................ _.·´\n            \..............( \n'             \.............\ ",
+    "dislike": "███████▄▄███████████▄\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀░░█░░░░██████▀\n░░░░░░░░░█░░░░█\n░░░░░░░░░░█░░░█\n░░░░░░░░░░░█░░█\n░░░░░░░░░░░█░░█\n░░░░░░░░░░░░▀▀ ",
+    "music": "╔══╗ \n║██║ \n║(O)║♫ ♪ ♫ ♪\n╚══╝\n▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █\n\nVol- --------------------------● Vol+ ",
+    "chess": "♜♞♝♚♛♝♞♜\n♟♟♟♟♟♟♟♟\n▓░▓░▓░▓░\n░▓░▓░▓░▓\n▓░▓░▓░▓░\n░▓░▓░▓░▓\n♙♙♙♙♙♙♙♙\n♖♘♗♔♕♗♘♖ ",
+    "shitos": "╭━━━┳╮╱╱╭╮╱╭━━━┳━━━╮\n┃╭━╮┃┃╱╭╯╰╮┃╭━╮┃╭━╮┃\n┃╰━━┫╰━╋╮╭╯┃┃╱┃┃╰━━╮\n╰━━╮┃╭╮┣┫┃╱┃┃╱┃┣━━╮┃\n┃╰━╯┃┃┃┃┃╰╮┃╰━╯┃╰━╯┃\n╰━━━┻╯╰┻┻━╯╰━━━┻━━━╯ "
 }
 
 unpacked_ascii = ""
@@ -101,3 +111,41 @@ async def _(event):
         await event.edit(req_ascii)
     except KeyError:
         await event.edit("ASCII art not found!")
+
+
+SYNTAX.update({
+    "reactions": "\
+**Requested Module --> reactions**\
+\n\n**Detailed usage of fuction(s):**\
+\nUsage: Just some funny little animations ;)\
+\n\n__List of reactions:__\
+\n.oof\
+\n.sed\
+\n.hek\
+"
+})
+
+SYNTAX.update({
+    "emojis": f"\
+**Requested Module --> emojis**\
+\n\n**Detailed usage of fuction(s):**\
+\n\n.emoji `<emoji_name>`\
+\nUsage: Prints the target emoji.\
+\n\n__List of included emoji(s):__\
+\n{unpacked_emojis}\
+"
+})
+
+SYNTAX.update({
+    "ascii": f"\
+**Requested Module --> ascii**\
+\n\nDetailed usage of fuction(s):\
+\n\n.ascii <art_name>\
+\nUsage: Prints the target ascii art.\
+\n\nList of included ASCII arts:\
+\nmf  __(Middle Finger)__\
+\ndislike  __(I hate it, boo)__\
+\nchess  __(Try playing chess!)__\
+\nshitos  __(Official logo for ShitOS)__ :P\
+"
+})
