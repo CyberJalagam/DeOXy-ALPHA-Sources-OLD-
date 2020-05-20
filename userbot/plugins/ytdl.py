@@ -216,7 +216,7 @@ async def download_video(v_url):
 MODULE_LIST.append("yt_dl")
 
 SYNTAX.update({
-    "youtube_dl": "\
+    "yt_dl": "\
 **Requested Module --> YouTube Downloader**\
 \n\n`.ytv <link>`\
 \nUsage: Downloads YouTube video (with audio)\
