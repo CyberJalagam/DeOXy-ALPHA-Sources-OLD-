@@ -2,14 +2,14 @@
 #Written By: @CyberJalagam and @TechyNewbie
 
 """Emoji
-Available Commands:
-.volte"""
+#SYNTAX .volte"""
 
+from global_variables_sql import SYNTAX, MODULE_LIST
 from telethon import events
 
 import asyncio
 
-
+MODULE_LIST.append("desp4volte")
 
 
 
@@ -83,3 +83,11 @@ async def _(event):
             await asyncio.sleep(animation_interval)
 
             await event.edit(animation_chars[i % 41])
+
+SYNTAX.update({
+    "desp4volte": "\
+**Requested module --> Despirate For VoLTE**\
+\n\n• `.volte`\
+\n__Usage: Express the sed loif of a MemeTek GSI/ROM user__\
+"
+})            
