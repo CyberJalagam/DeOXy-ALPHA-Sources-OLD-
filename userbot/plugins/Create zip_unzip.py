@@ -15,8 +15,10 @@ from userbot.utils import admin_cmd, humanbytes, progress, time_formatter
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from telethon import events
+from global_variables_sql import SYNTAX, MODULE_LIST
 import zipfile
 
+MODULE_LIST.append("Zip/Unzipper")
 
 extracted = Config.TMP_DOWNLOAD_DIRECTORY + "extracted/"
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
@@ -132,3 +134,15 @@ def get_lst_of_files(input_directory, output_lst):
             return get_lst_of_files(current_file_name, output_lst)
         output_lst.append(current_file_name)
     return output_lst
+
+SYNTAX.update({
+    "Zip/Unzipper": f"\
+**Requested Module --> Compression Module**\
+\n\nDetailed usage of fuction(s):\
+\n\n.zip\
+\nUsage: Makes a Zip/Compress the file replied.\
+\n\n\
+\n\n.unzip\
+\nUsage: Unzip/Decompress the file replied.\
+"
+})
