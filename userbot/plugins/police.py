@@ -13,7 +13,7 @@ import asyncio
 from uniborg.util import admin_cmd
 from global_variables_sql import SYNTAX, MODULE_LIST
 
-MODULE_LIST.append.("police")
+MODULE_LIST.append("police")
 
 @borg.on(admin_cmd(pattern=r"(.*)"))
 
