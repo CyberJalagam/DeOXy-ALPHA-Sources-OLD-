@@ -1,10 +1,10 @@
 """COMMAND : .kill"""
 
 from telethon import events
-
+from global_variables_sql import SYNTAX, MODULE_LIST
 import asyncio
 
-
+MODULE_LIST.append("kill")
 
 
 
@@ -47,3 +47,12 @@ async def _(event):
 
 
             await event.edit(animation_chars[i % 103])
+
+ SYNTAX.update({
+    "kill": f"\
+**Requested Module -->  Kill**\
+\n\nDetailed usage of fuction(s):\
+\n\n.kill\
+\nUsage: Kills The Target :P.\
+"
+})           
