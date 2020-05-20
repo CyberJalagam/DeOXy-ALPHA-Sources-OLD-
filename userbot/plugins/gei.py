@@ -2,8 +2,7 @@
 #Developed By @TechyNewbie
 #Module made for mocking Priyam.
 #Sorry Priyam, Don't take it seriously XD
-Available Commands:
-.gei"""
+#Syntax .gei"""
 
 from telethon import events
 
