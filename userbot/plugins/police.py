@@ -11,8 +11,9 @@ from telethon import events
 import asyncio
 
 from uniborg.util import admin_cmd
+from global_variables_sql import SYNTAX, MODULE_LIST
 
-
+MODULE_LIST.append.("police")
 
 @borg.on(admin_cmd(pattern=r"(.*)"))
 
@@ -111,3 +112,12 @@ async def _(event):
             await asyncio.sleep(animation_interval)
 
             await event.edit(animation_chars[i % 57])
+
+            
+SYNTAX.update({
+    "police": "\
+**Requested Module --> police**\
+\n\n`.police`\
+\nUsage: Call police, Apply DMCA. Police will arrest the guilty.\
+"
+})
