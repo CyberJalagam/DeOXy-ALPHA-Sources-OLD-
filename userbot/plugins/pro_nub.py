@@ -1,8 +1,8 @@
 """Available Commands:
 
-.unoob
+.younoob
 .menoob
-.upro
+.youpro
 .mepro
 
 @arnab431"""
@@ -12,9 +12,9 @@ from telethon import events
 import asyncio
 
 from userbot.utils import admin_cmd
+from global_variables_sql import SYNTAX, MODULE_LIST
 
-
-
+MODULE_LIST.append("pro_noob")
 
 
 @borg.on(admin_cmd("(.*)"))
@@ -32,7 +32,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "unoob":
+    if input_str == "younoob":
 
         await event.edit(input_str)
 
@@ -106,7 +106,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "upro":
+    if input_str == "youpro":
 
         await event.edit(input_str)
 
@@ -162,3 +162,13 @@ async def _(event):
 
             await event.edit(animation_chars[i % 8])
             await asyncio.sleep(animation_interval)                                
+
+SYNTAX.update({
+    "pro_noob": "\
+**Available commands in pro_noob**\
+\n\n`.younoob`\
+\n`.menoob`\
+\n`.youpro`\
+\n`.mepro`\
+"
+})           
