@@ -4,13 +4,15 @@
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins, ChannelParticipantAdmin, ChannelParticipantCreator
 from uniborg.util import admin_cmd
+from global_variables_sql import SYNTAX, MODULE_LIST
 
+MODULE_LIST.append("admemes")
 
 @borg.on(admin_cmd("admemes ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
-    mentions = "Somebody come look at this shit..\n"
+    mentions = "Admemes In This Group..\n"
     should_mention_admins = False
     reply_message = None
     pattern_match_str = event.pattern_match.group(1)
@@ -40,3 +42,14 @@ async def _(event):
         await event.delete()
     else:
         await event.edit(mentions)
+
+
+SYNTAX.update({
+    "admemes": f"\
+**Requested Module --> Adememes**\
+\n\nDetailed usage of fuction(s):\
+\n\n.admemes\
+\nUsage: Shows All The Admins On The Group.\
+\n\nReply To A Message For Mentions\
+"
+})        
