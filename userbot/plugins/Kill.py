@@ -54,5 +54,4 @@ async def _(event):
 \n\nDetailed usage of fuction(s):\
 \n\n.kill\
 \nUsage: Kills The Target :P.\
-"
-})           
+"})           
