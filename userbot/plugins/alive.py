@@ -33,4 +33,4 @@ SYNTAX.update({
 \n\n```.alive```\
 \nUsage: Checks If Userbot Is Alive.\
 "
-}
+})
