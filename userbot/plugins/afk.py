@@ -5,6 +5,9 @@ import datetime
 from datetime import datetime
 from telethon import events
 from telethon.tl import functions, types
+from global_variables_sql import SYNTAX, MODULE_LIST
+
+MODULE_LIST.append("afk")
 
 
 global USER_AFK  # pylint:disable=E0602
@@ -154,3 +157,12 @@ async def on_afk(event):
         if event.chat_id in last_afk_message:  # pylint:disable=E0602
             await last_afk_message[event.chat_id].delete()  # pylint:disable=E0602
         last_afk_message[event.chat_id] = msg  # pylint:disable=E0602
+
+SYNTAX.update({
+    "afk": "\
+**Requested Module --> afk**\
+\n\n**Detailed usage of fuction(s):**\
+\n\n```.afk <optional_reason>```\
+\nUsage: Changes afk mode to **true**.\
+"
+})        
