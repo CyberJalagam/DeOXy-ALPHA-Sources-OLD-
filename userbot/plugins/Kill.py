@@ -50,8 +50,9 @@ async def _(event):
 
  SYNTAX.update({
     "kill": f"\
-**Requested Module -->  Kill**\
+**Requested Module --> Kill**\
 \n\nDetailed usage of fuction(s):\
 \n\n.kill\
-\nUsage: Kills The Target :P.\
-"})           
+\nUsage: Kills The Replied Target\
+"
+})
