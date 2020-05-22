@@ -11,6 +11,9 @@ from bs4 import BeautifulSoup
 
 from userbot import CMD_HELP
 from userbot.utils import register
+from global_variables_sql import SYNTAX, MODULE_LIST
+
+MODULE_LIST.append("android")
 
 GITHUB = 'https://github.com'
 DEVICES_DATA = 'https://raw.githubusercontent.com/androidtrackers/' \
@@ -182,9 +185,9 @@ async def twrp(request):
     await request.edit(reply)
 
 
-CMD_HELP.update({
-    "android":
-    ".magisk\
+SYNTAX.update({
+    "android": f"\
+**Requested Module --> Androis**\
 \nGet latest Magisk releases\
 \n\n.device <codename>\
 \nUsage: Get info about android device codename or model.\
