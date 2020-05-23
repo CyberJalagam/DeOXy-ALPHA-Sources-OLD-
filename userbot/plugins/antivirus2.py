@@ -4,6 +4,9 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from userbot.utils import admin_cmd,register
+from global_variables_sql import SYNTAX, MODULE_LIST
+
+MODULE_LIST.append("antivirus")
 
 @borg.on(admin_cmd("scan ?(.*)"))
 async def _(event):
@@ -37,3 +40,10 @@ async def _(event):
           		await event.edit("`Please go to` @DrWebBot `and select your language.`") 
           	else: 
           			await event.edit(f"**Antivirus scan was completed. I got dem final results.**\n {response.message.message}")
+SYNTAX.update({
+    "antivirus": "\
+**Requested module --> Despirate For AntiVirus**\
+\n\n• `.scan`\
+\n__Usage: Reply to a file/website to scan__\
+"
+})
