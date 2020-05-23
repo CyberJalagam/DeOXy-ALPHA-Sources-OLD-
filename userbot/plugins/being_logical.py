@@ -14,7 +14,9 @@ import os
 import sys
 
 import random
+from global_variables_sql import SYNTAX, MODULE_LIST
 
+MODULE_LIST.append("belo")
 
 
 @borg.on(events.NewMessage(pattern=r"\.belo", outgoing=True))
@@ -421,3 +423,10 @@ async def _(event):
 
     
 
+SYNTAX.update({
+    "belo": "\
+**Requested module --> Bot Say Something ;-)**\
+\n\n• `.bello`\
+\n__Usage: Pulls out a random command yay__\
+"
+})
