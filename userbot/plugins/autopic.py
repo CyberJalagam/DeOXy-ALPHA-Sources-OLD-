@@ -3,8 +3,11 @@ from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 from pySmartDL import SmartDL
 from telethon.tl import functions
+from global_variables_sql import SYNTAX, MODULE_LIST
 import asyncio
 import shutil
+
+MODULE_LIST.append("autopic")
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 
@@ -37,3 +40,10 @@ async def autopic(event):
             await asyncio.sleep(60)
         except:
             return
+SYNTAX.update({
+    "autopic": "\
+**Requested module --> Auto pic**\
+\n\n• `.autopic`\
+\n__Usage: NOT ADDED__\
+"
+})
