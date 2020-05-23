@@ -23,10 +23,10 @@ SYNTAX.update({
 **Requested Module --> Solar System**\
 \n\nDetailed usage of fuction(s):\
 \n\n\
-\nUsage: Creates Cool Planet Emojis.\
+\nUsage: Creates Cool Planet Emojis.\n\
 \n\nList of included Animaes:\
-\__(.Earth)__\
-\n__(.moon)__\
-\n__(.solarsystem)__\
+\__(.Earth)__\n\
+\n__(.moon)__\n\
+\n__(.solarsystem)__\n\
 "
 })
