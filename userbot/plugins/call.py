@@ -65,5 +65,3 @@ SYNTAX.update({
 \nUsage: Calls a friend.\
 "
 })
-
-
