@@ -51,7 +51,7 @@ SYNTAX.update({
     "bash": f"\
 **Requested Module --> Bash Programming**\
 \n\nDetailed usage of fuction(s):\
-\n\n.bash <code>\
+\n\n```.bash <code>```\
 \nUsage: Runs the bash script.\
 "
 })    
