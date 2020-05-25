@@ -81,9 +81,9 @@ SYNTAX.update({
 **Requested Module --> Blacklister**\
 \n\nDetailed usage of fuction(s):\
 \nUsage: Adds,Removes And Shows Blacklist.\
-\n\nList of Available commands:\
-\n.addblacklist  __(Add blacklist)__\
-\n.rmblacklist  __(Remove blacklist)__\
-\nlistblacklist  __(Shows The Black List)__\
+\n\n**List of Available commands:**\
+\n```.addblacklist```  __(Add blacklist)__\n\
+\n```.rmblacklist```  __(Remove blacklist)__\n\
+\n```.listblacklist```  __(Shows The Black List)__\n\
 "
 })     
