@@ -48,8 +48,8 @@ SYNTAX.update({
     "admemes": f"\
 **Requested Module --> Adememes**\
 \n\nDetailed usage of fuction(s):\
-\n\n.admemes\
+\n\n```.admemes```\
 \nUsage: Shows All The Admins On The Group.\
-\n\nReply To A Message For Mentions\
+\n\n**Reply To A Message For Mentions**\
 "
 })        
