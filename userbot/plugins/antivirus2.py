@@ -42,8 +42,8 @@ async def _(event):
           			await event.edit(f"**Antivirus scan was completed. I got dem final results.**\n {response.message.message}")
 SYNTAX.update({
     "antivirus": "\
-**Requested module --> Despirate For AntiVirus**\
+**Requested module --> AntiVirus**\
 \n\n• `.scan`\
-\n__Usage: Reply to a file/website to scan__\
+\n__Usage: Reply to a file/website to scan for virus__\
 "
 })
