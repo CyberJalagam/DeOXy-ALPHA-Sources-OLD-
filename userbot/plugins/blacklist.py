@@ -9,10 +9,12 @@ Available Commands:
 import asyncio
 import re
 import userbot.plugins.sql_helper.blacklist_sql as sql
+from global_variables_sql import SYNTAX, MODULE_LIST
 from telethon import events, utils
 from telethon.tl import types, functions
 from userbot.utils import admin_cmd
 
+MODULE_LIST.append("blacklist")
 
 @borg.on(events.NewMessage(incoming=True))
 async def on_new_message(event):
@@ -73,3 +75,15 @@ async def on_delete_blacklist(event):
         if sql.rm_from_blacklist(event.chat_id, trigger.lower()):
             successful += 1
     await event.edit(f"Removed {successful} / {len(to_unblacklist)} from the blacklist")
+
+SYNTAX.update({
+    "blacklist": f"\
+**Requested Module --> Blacklister**\
+\n\nDetailed usage of fuction(s):\
+\nUsage: Adds,Removes And Shows Blacklist.\
+\n\nList of Available commands:\
+\n.addblacklist  __(Add blacklist)__\
+\n.rmblacklist  __(Remove blacklist)__\
+\nlistblacklist  __(Shows The Black List)__\
+"
+})     
