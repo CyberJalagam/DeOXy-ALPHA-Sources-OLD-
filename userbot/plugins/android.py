@@ -187,7 +187,7 @@ async def twrp(request):
 
 SYNTAX.update({
     "android": f"\
-**Requested Module --> Androis**\
+**Requested Module --> Android**\
 \nGet latest Magisk releases\
 \n\n.device <codename>\
 \nUsage: Get info about android device codename or model.\
