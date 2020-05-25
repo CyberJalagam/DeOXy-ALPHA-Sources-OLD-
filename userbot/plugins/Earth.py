@@ -25,8 +25,8 @@ SYNTAX.update({
 \n\n\
 \nUsage: Creates Cool Planet Emojis.\n\
 \n\nList of included Animaes:\
-\__(.Earth)__\n\
-\n__(.moon)__\n\
-\n__(.solarsystem)__\n\
+\```.Earth```\n\
+\n```.moon```\n\
+\n```.solarsystem```\n\
 "
 })
