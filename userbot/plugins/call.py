@@ -59,7 +59,7 @@ async def _(event):
             
 SYNTAX.update({
     "call": f"\
-**Requested Module --> Call meme**
+**Requested Module --> Call meme**\
 \n\nDetailed usage of fuction(s):\
 \n\n```.call```\
 \nUsage: Calls a friend.\
