@@ -139,10 +139,10 @@ SYNTAX.update({
     "Zip/Unzipper": f"\
 **Requested Module --> Compression Module**\
 \n\nDetailed usage of fuction(s):\
-\n\n.zip\
+\n\n```.zip```\
 \nUsage: Makes a Zip/Compress the file replied.\
 \n\n\
-\n\n.unzip\
+\n\n```.unzip```\
 \nUsage: Unzip/Decompress the file replied.\
 "
 })
