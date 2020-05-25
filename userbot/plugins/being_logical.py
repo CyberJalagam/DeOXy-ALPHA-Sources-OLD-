@@ -427,6 +427,6 @@ SYNTAX.update({
     "belo": "\
 **Requested module --> Bot Say Something ;-)**\
 \n\n• `.bello`\
-\n__Usage: Pulls out a random command yay__\
+\n__Usage: Pulls out a random shit. yay__\
 "
 })
