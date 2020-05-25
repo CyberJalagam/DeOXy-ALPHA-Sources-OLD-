@@ -50,7 +50,7 @@ SYNTAX.update({
     "kill": f"\
 **Requested Module --> Message Killer**\
 \n\nDetailed usage of fuction(s):\
-\n\n.kill\
+\n\n```.kill```\
 \nUsage: Kills the replied target.\
 "
 })            
